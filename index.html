@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Kairos</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Secure Fast Pass</h1>
+                
+                <span>Use email and password for ticket registeration</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+
+                <span>Preferred Rides</span>
+                <div class="form-row">
+                    <select id="choice-1">
+                        <option value="" disabled selected>Preferred Ride #1</option>
+       
+                    </select>
+                    <select id="choice-1-time" class="time" >
+                        <option value="" disabled selected>Time Slot</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <select id="choice-2">
+                        <option value="" disabled selected>Preferred Ride #2</option>
+       
+                    </select>
+                    <select id="choice-2-time" class="time" >
+                        <option value="" disabled selected>Time Slot</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <select id="choice-3">
+                        <option value="" disabled selected>Preferred Ride #3</option>
+       
+                    </select>
+                    <select id="choice-3-time" class="time" >
+                        <option value="" disabled selected>Time Slot</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <select id="choice-4">
+                        <option value="" disabled selected>Preferred Ride #4</option>
+       
+                    </select>
+                    <select id="choice-4-time" class="time" >
+                        <option value="" disabled selected>Time Slot</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <select id="choice-5">
+                        <option value="" disabled selected>Preferred Ride #5</option>
+       
+                    </select>
+                    <select id="choice-5-time" class="time" >
+                        <option value="" disabled selected>Time Slot</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                
+
+                <button id="loginButton">Apply</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Buy Tickets</h1>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <span>Date of visit</span>
+                <input type="date" id="date">
+                <select id="ticketQuantity">
+                    <option value="" disabled selected>Number of ticket(s) (599 RMB)</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <a href="#">Bought tickets already? Register for Fast Pass</a>
+                <button id = "priceDisplay">Pay</button>
+
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Get tickets now!</h1>
+                    <p>Gain exclusive access to skip the queue entirely by attending rides at your scheduled time with your Complimentary Fast Pass! But first... we must buy Tickets!</p>
+                    <button class="hidden" id="login">Buy Tickets</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Avoid the Queue?</h1>
+                    <p>Secure your complimentary fast pass tickets to skip the queue by registering below after purchasing your tickets. Act fast, our supply is limited!</p>
+                    <button class="hidden" id="register">Get Complimentary Fast Pass!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
